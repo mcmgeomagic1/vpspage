@@ -1,0 +1,24 @@
+<!--<%@ page contentType="text/html;charset=gb2312" %>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:useBean id="resultBean" class="mybean.data.Admin_Vps_Bean" scope="request"/>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="webkit.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+</head>
+<center>
+<FORM action="searchAdminVpsServlet" Method="post" class="admin-vps-search-form">
+<span>查找用户VPS使用情况</span><br>
+<i class="ion-search"></i>
+<Input type=text name="name" class="name" placeholder="使用者姓名">
+<Input type=submit name="confirm" value="确定" class="g">
+</form>
+<br>
+<a href="user_menu_show.html"><i class="ion-close-circled icon-small"></i></a>
+</center>
+</body>
+</HTML>

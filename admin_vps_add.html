@@ -1,0 +1,36 @@
+<!--<%@ page contentType="text/html;charset=gb2312" %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:useBean id="resultBean" class="mybean.data.Admin_Vps_Bean" scope="request"/>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="webkit.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+</head>
+<body class="admin-vps-add">
+<div align="center">
+
+
+<FORM action="addAdminVpsServlet" Method="post" class="admin-vps-add-form">
+<span>新增VPS<span><br>
+<Input type=text name="logname" class="logname" placeholder="使用者账号">
+<Input type=text name="name" class="name" placeholder="使用者姓名"><br>
+<Input type=text name="id" class="id" placeholder="序号">
+<Input type=text name="apply_time" class="apply_time" placeholder="申请时间">
+<Input type=text name="used_time" class="used_time" placeholder="使用时间"><br>
+<Input type=text name="CPU" class="CPU" placeholder="CPU核数">
+<Input type=text name="GPU" class="GPU" placeholder="GPU块数">
+<Input type=text name="RAM" class="RAM" placeholder="内存大小">
+<Input type=text name="disk" class="disk" placeholder="硬盘容量"><br>
+<Input type=text name="os" class="os" placeholder="操作系统"><br>
+<Input type=text name="usage" class="usage" placeholder="用途"><br>
+<Input type=text name="root" class="root" placeholder="管理员">
+<Input type=text name="close" class="close" placeholder="是否注销"><br>
+</table>
+<Input type=submit name="confirm" value="确定" class="g">
+</form>
+<br>
+<center><a href="user_menu_show.html"><i class="ion-close-circled icon-small"></i></a></center>
+</font></body></HTML>

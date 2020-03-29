@@ -1,0 +1,52 @@
+<!--<%@ page language="java" contentType="text/html; charset=gb2312" %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:useBean id="loginBean" class="mybean.data.Login_User_Bean" scope="session"/>
+<title>Login in our System</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+</head>
+<body>
+	<div class="all">
+        <header class="login">
+          <nav>
+                <div class="row">
+                    <img class="logo" src="VPSLogo-white.png" alt="logo">
+                    <ul class="main-nav">
+                        <li><a href="index.html"><i class="ion-arrow-return-left"></i></a></li>
+                   </ul>
+                </div>
+          </nav>
+ <!--
+<%for(int i=1;i<=10;i++){ %>
+	<br>
+<%} %>
+-->
+ <div class="row bellow-the-logo"> 		
+<form action="searchUserServlet" Method="post" class="login-form">
+<span class="span-login">登录</span><br>
+<i class="ion-android-person icon-big"></i>
+<Input type=text name="logname" class="logname" placeholder="登录名称"/><br>
+<Input type=password name="password" class="password password-login" placeholder="输入密码"/><br>
+<span class="choose-login">
+
+   <input type=radio name=type value=admin class="radio-login">管理员
+   <input type=radio name=type value=user checked="radio-login">普通用户
+</span>
+
+<input type=submit name="confirm" value="登录" class="btn g"><br>
+<center><a href="register_user.html"><div class="like-btn">注册</div></a></center>
+
+
+</form>
+</div>
+<div align="center" >
+<jsp:getProperty name="loginBean" property="backNews"/>
+</div>
+</div>
+</font>
+</BODY>
+</HTML>
