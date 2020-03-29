@@ -1,0 +1,772 @@
+
+/*-----------------------------------------------------------------------------------*/
+/* BASIC SETTINGS */
+/*-----------------------------------------------------------------------------------*/
+
+		*{
+			margin: 0px;
+            padding: 0;
+            box-sizing: 0;
+		}
+		body,html {
+			width: 100%;
+			height: 100%;
+			font-family: 'lato';
+            font-weight: 300;
+            font-size: 20px;
+            color: white;
+            background-color: #2c3041;
+            scroll-behavior: smooth;
+
+		}
+    body.user-menu-choose {
+      overflow-y: hidden;
+      padding-top: 40px;
+      background: #2c3041;
+      overflow-x: hidden;
+    }
+    body.user-menu-show {
+      background: #2c3041;
+       overflow-y: hidden;
+       overflow-x: hidden;
+    }
+    
+    body.user-menu {
+      background: #2c3041;
+    }
+    body.user-info-change {
+      overflow-y: hidden;
+       overflow-x: hidden;
+    }
+    body.admin-vps-add {
+      background: #2c3041;
+       overflow-x: hidden;
+    }
+        .row {
+             max-width: 1145px;
+             margin: 0 auto;
+             border: 0px solid white;
+         }
+         .row-3 {
+             max-width: 1245px;
+             margin: 0 auto;
+             border: 0px solid white;
+         }
+         .row-2{
+             max-width: 1445px;
+             margin: 0 auto;
+             border: 0px solid white;
+         }
+         .bellow-the-logo {
+          margin-top: 3%;
+         }
+         .user-menu-choose .bellow-the-logo{
+          margin-top: 0px;
+         }
+        section {
+             padding: 60px 0px;
+
+        }
+        .box {
+             padding: 5% 2%;
+             text-align: center;
+              box-shadow: 0px px 4px rgba(34,96,70,0.4);
+             transition: transform 0.5s;   
+       }
+       .box:hover {
+             transform: scale(1.15);
+
+       }
+       .box p {
+
+             color: rgba(255,255,255,0.7);
+             letter-spacing: 1px;
+             animation: animation-for-bo 2s ease-in-out;
+       }
+@keyframes animation-for-bo{
+        0% {
+            background: transparent;
+            color: transparent;
+        }
+}
+/*--------------------------------------------------*/
+/* HEADINGS */
+/*-------------------------------------------------*/
+
+
+h1,
+h2,
+h3,
+h4,
+.copyright-span {
+    
+    
+    font-weight: 30;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+h4 {
+    color: white;
+    font-size: 120%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    animation: anime2 6s;
+}
+h1 {
+    color: white;
+    font-size: 270%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    animation: anime 3s;
+}
+@keyframes anime{
+    0%{
+        margin-top: 0px;
+        transform: translateX(-80%);
+        color: transparent;
+}
+25% {
+        transform: translateY(-10px);
+        
+    }
+}
+@keyframes anime2{
+    0%{
+        
+        color: transparent;
+}
+75% {
+        transform: translateY(5px);
+        
+    }
+}
+@keyframes anime3{
+    0%{
+         border: 1px solid transparent;
+         background: transparent;
+         color: transparent;
+}
+}
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    letter-spacing: ;
+    text-align: center;
+    animation: animation-for-bo 2s ease-in-out;
+}
+.section-features h1 {
+    text-align: center;
+    font-size: 250%;
+}
+.page-footer h4 {
+    color: #a23f57;
+}
+/*--------------------------------------------------*/
+/* BUTTONS */
+/*-------------------------------------------------*/
+
+
+.btn:link,
+.btn:visited {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color: 0.2s, border 0.2s, color 0.2s;    
+    margin-right: 15px;
+    margin-bottom: 70px;
+    animation: anime3 6s;
+    transition: transform 0.5s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #a23f57;
+    border: 1px solid #a23f57;
+    color: #fff;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+    transform: scale(1.15);
+    background-color: ;
+    border: ;
+    color: #fff;
+}
+.login-form .g,
+.login-form .g-login {
+  margin-left: 112px;
+}
+.login-form .g {
+  margin-top: 30px;
+}
+/*-----------------------------------------------------------------------------------*/
+/* HEADER */
+/*-----------------------------------------------------------------------------------*/
+        header {
+        	
+        	height: 100vh;
+        	background-size: cover;
+        	background-position: center;
+          width: 100%; 
+          background-image: linear-gradient(#003aaf, rgba(0,0,0,0.4)), url("imageSmaller.jpg");
+        }
+        header.login {
+            background-image: linear-gradient(#003aaf, rgba(0,0,0,0.1)), url("imageSmaller.jpg");
+        }
+        header.user-menu {
+            height: 10vh;
+        }
+        header.user-menu nav {
+            width: 100%;
+            height: 100%;
+            background: rgba(48,79,175,0.8);;
+        }
+        nav {
+            width: 100%;
+            height: 13%;
+             background: rgba(0,0,0,0.1);
+        }
+        .hero-text-box {
+            padding: 50px;
+        position: absolute;
+        width: 1140px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+       }
+        .logo {
+            height: 110px;
+            width: auto;
+            float: left;
+            margin-top: 20px;
+            animation: animation-for-logo 0.6s ease-in-out;
+       }
+       .user-menu .logo {
+            transition: transform 0.5s;
+       }
+       .user-menu .logo:hover {
+        transform: rotateZ(10deg) scale(1.19);
+       }
+       .second {
+        margin-top: 50px;
+           height: px;
+       }
+       @keyframes animation-for-logo{
+        0% {
+            color: transparent;
+            height: 190px;
+            transform: rotate(8900deg);
+        }
+
+       }
+       .main-nav {
+            margin-top: 55px;
+            float: right;
+            list-style: none;
+
+       }
+      .main-nav li {
+            display: inline-block;
+            margin-left: 40px;
+            animation: animation-for-menu-nav 3s ease-in-out;
+       }
+       @keyframes animation-for-menu-nav{
+           0%{
+        margin-top: 0px;
+        transform: translateX(300%);
+        color: transparent;
+        }
+           25% {
+        transform: translateX(10px);
+        
+    }
+       }
+       .main-nav li a:link,
+       .main-nav li a:visited {
+            padding: 8px 0px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            color: white;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.2s: 
+
+       }
+      .main-nav li a:hover,
+      .main-nav li a:active {
+             color: #ddd;
+             border-bottom: 2px solid white;
+       }
+/*--------------------------------------------------*/
+/*  FEATURES  */
+/*-------------------------------------------------*/
+       .section-features {
+        width: 100%;
+        background-image: linear-gradient(#43111a,#a23f57);
+        background-position: center;
+        background-size: cover;
+       }
+       .section-features .long-copy {
+              margin-bottom: 30px;
+
+       }
+/*--------------------------------------------------*/
+/*ICONS*/
+/*---------------------------------------------------*/
+
+ 
+ .icon-big, 
+ .icon-big-2 {
+    text-align: center;
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    animation: animation-for-bo 2s ease-in-out;
+ }
+.icon-big {
+     font-size: 290%;
+}
+       
+.icon-big-2 {
+    font-size: 500%;
+} 
+.icon-small {
+  color: grey;
+  font-size: 170%;
+  transition: transform 0.5s;
+}
+.icon-small:hover {
+  transform: scale(1.15);
+}
+.icon-small-2:hover {
+  color: #a23f57;
+  transform: scale(1.15);
+}
+.icon-small-2 {
+  font-size: 140%;
+  color: white;
+  transition: transform 0.5s;
+}
+/*--------------------------------------------------*/
+/*FOOTER*/
+/*---------------------------------------------------*/
+
+.page-footer{
+    background: #2c3041;
+    height: 370px;
+    width: 100%;
+    clear: both;
+    color: white;
+    position: relative;
+}
+.hero-text-box-footer {
+        padding: 0px;
+        position: absolute;
+        width: 1140px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+       }
+    .logo-footer {
+            height: 190px;
+            width: auto;
+            float: left;
+            margin-left:260px;
+            animation: animation-for-logo 0.6s ease-in-out;
+            margin-bottom: 20px;
+            transition: transform 0.6s;
+
+       }
+    .logo-footer:hover {
+            transform: rotateZ(10deg) scale(1.15);
+    }
+    .page-footer .btn {
+        margin-top: 60px;
+        margin-right: 340px;
+        float: right;
+        background: white;
+        border: 1px solid black;
+        color: #2c3041;
+        width: 270px;
+        transition: transform 0.5s;
+    }
+    .page-footer .btn:hover {
+        transform: scale(1.15);
+    }
+    .copyright-span {
+        color: #ddd;
+        font-size: 70%;
+        letter-spacing: 1px;
+        font-weight: 300;
+        word-spacing: 5px
+    }
+    .copyright {
+      margin-top: 320px;
+      text-align: center;
+    }
+/*--------------------------------------------------*/
+/*FORMS*/
+/*---------------------------------------------------*/
+.register-form {
+  border-radius: 20px;
+  position: relative;
+  color:white;
+  background: rgba(187,189,199,0.9);
+  padding: 40px 20px 40px 20px;
+  border-bottcom: 20px solid #616161;
+  width: 82%;
+  height: 420px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 90px black;
+  border-radius: 20px;
+}
+.login-form {
+  margin: 0 auto;
+   width: 40%;
+   box-shadow: 0px 0px 90px black;
+   background: rgba(187,189,199,0.8);
+   padding: 40px 20px 40px 20px;
+}
+ .like-btn {
+    font-size: 70%;
+    color: white;
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    background-color: #003aaf;    
+    transition: transform 0.5s;
+}
+.like-btn:hover {
+    transform: scale(1.15);
+    color: #fff;
+}
+.like-btn a:link,
+.like-btn a:visited {
+  color: white;
+  text-decoration: none;
+}
+.change-info-form {
+  border-radius: 20px;
+  margin: 0 auto;
+   width: 59%;
+   box-shadow: 0px 0px 90px black;
+   background: rgba(187,189,199,0.8);
+   padding: 40px 20px 40px 20px;
+}
+.admin-vps-add-form { 
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  padding: 25px 35px 25px 35px;
+  width: 440px;
+  font-size: 88%;
+  border: 0px solid white;
+}
+.admin-vps-search-form { 
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  padding: 25px 35px 35px 35px;
+  width: 690px;
+  font-size: 88%;
+  border: 0px solid white;
+}
+.admin-vps-search-form [class="name"] { 
+  margin-top: 10px;    
+  width: 70%;
+}
+.admin-vps-search-form .g { 
+  margin: 0;
+  width: 100px;
+}
+.admin-vps-add-form input[class="name"],
+.admin-vps-add-form input[class="logname"],
+.admin-vps-add-form input[class="root"],
+.admin-vps-add-form input[class="close"] {
+    width: 40%;
+}
+.admin-vps-add-form input[class="CPU"],
+.admin-vps-add-form input[class="GPU"],
+.admin-vps-add-form input[class="RAM"],
+.admin-vps-add-form input[class="disk"] {
+    width: 15.3%;
+}
+.admin-vps-add-form input[class="id"],
+.admin-vps-add-form input[class="apply_time"],
+.admin-vps-add-form input[class="used_time"] {
+    width: 23.5%;
+}
+
+label {
+  font-weight: 300;
+  font-size: 145%;
+  margin: 0px 0px 70px 0px;
+}
+input {
+  width: 90%;
+  border: 0;
+  background: whitesmoke;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 13px;
+  font-size: 80%;
+}
+
+.login-form .logname {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+input[class="confirm"] {
+  color: white;
+  background:#a23f57;
+}
+input[class="password"] {
+  margin-bottom: 20px;
+}
+input[class="logname"],
+input[class="name"],
+input[class="phone"] {
+  margin-top: 30px;
+}
+input[class="password"],
+input[class="number"],
+input[class="academy"]
+{
+  width: 40%;
+}
+input[type="radio"] {
+  margin-top: 30px;
+  width: 30px;
+}
+
+.choose-login {
+  border: 0px solid white;
+  width: 100%;
+  padding: 40px;
+  margin-left: 60px;
+}
+.password-login {
+  width: 90%;
+}
+.form-sides {
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.form-sides li {
+  padding: 20px;
+  margin:0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.g{
+    margin-top: 76px;
+    margin-bottom: 10px;
+    width: 240px;
+    border-radius: 200px;
+    background-color: #a23f57;
+    border: 1px solid #a23f57; 
+    color: white;
+    transition: transform 0.5s;
+}
+.g-login{
+    padding: 13px;
+    width: 240px;
+    text-decoration: none;
+    border-radius: 200px;
+    background-color: rgb(49,79,175);
+    border: 1px solid rgb(49,79,175); 
+    color: white;
+    transition: transform 0.5s;
+    margin-bottom: 20px;
+}
+.g:hover {
+    background:rgb(48,79,175);
+    border: 1px solid rgba(48,79,175,0.8);
+}
+.admin-vps-add-form .g {
+  margin-top: 20px;
+}
+.register-form span {
+  text-align: center;
+  width: 190px;
+  background: rgba(48,79,175,0.8);
+  padding: 10px;
+  font-size: 110%;
+  color: white;
+  position: absolute;
+  margin-top: -65px;
+  margin-left: 350px;
+  border-radius: 10%;
+}
+.span-login {
+  text-align: center;
+  width: 190px;
+   background: rgba(48,79,175,0.8);
+  padding: 10px;
+  font-size: 110%;
+  color: white;
+  position: absolute;
+  margin-top: -65px;
+  margin-left: 120px;
+  border-radius: 10%;
+}
+.register-form a:link,
+.register-form a:visited{
+  text-decoration: none;
+  
+}
+.user-info-change span {
+    text-align: center;
+  width: 190px;
+   background: rgba(48,79,175,0.8);
+  padding: 10px;
+  font-size: 110%;
+  color: white;
+  position: absolute;
+  margin-top: -43px;
+  margin-left: 350px;
+  border-radius: 10%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* IFRAMES */
+/*-----------------------------------------------------------------------------------*/
+
+.user-menu-iframe-select {
+height: 30vh;
+border: 0px solid white;
+margin: 0;
+transition: 0.5s;
+float: left;
+}
+.user-menu-iframe-show {
+  margin-top: -60px;
+  border: 0px solid white;
+  height: 68vh;
+  width: 1442.3px;
+}
+.big {
+
+  height: 36vh;
+}
+/*-----------------------------------------------------------------------------------*/
+/* USER MENU */
+/*-----------------------------------------------------------------------------------*/
+.user-menu-choose a {
+   text-decoration: none;
+   color: white;
+}
+.user-menu-choose ul {
+  list-style-type: none;
+}
+.user-menu-choose ul li{
+  padding: 10px 10px 10px 0px;
+  background: rgba(255,255,255,0.4);
+  margin-top: px;
+  transition: transform 0.5s;
+}
+.user-menu-choose ul li.one{
+  background: #304faf;
+}
+.user-menu-choose ul li.one-2{
+  background: #a23f57;
+}
+.user-menu-choose ul li:hover{
+  background: #a23f57;
+  transform: scale(1.10);
+}
+.space {
+  opacity: 0.7;
+  font-size: 100%;
+  float: left;
+  margin:13% 10%;
+  color: white;
+}
+/*--------------------------------------------------*/
+/*TABLE*/
+/*---------------------------------------------------*/
+.user-table { 
+  padding-bottom: 25px;
+  padding-top: 25px;
+  width: 1340px;
+  background:0;
+  font-size: 88%;
+}
+.user-table, td, th {
+   border: 0px solid white; 
+   text-align: justify;
+}
+.user-table tr {
+  padding: 0px;
+}
+.user-table td {
+  padding: 10px;
+}
+.user-table th{
+ 
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+   background: rgba(187,189,199,0.2);
+}
+
+/*--------------------------------------------------*/
+/*HOME PERFIL*/
+/*---------------------------------------------------*/
+  .p {
+  margin-left: 50px;
+  color: transparent;
+  animation: home 5s ease-in-out infinite;
+}
+@keyframes home {
+  0%,100% {
+    opacity: 1,;
+  }
+  25% {
+    color: white;
+    opacity: 0.9;
+  }
+
+}
+ .icon-big-home {
+    font-size: 380%;
+    text-align: center;
+    display: block;
+    color: transparent;
+    animation: home 5s ease-in-out infinite;
+}

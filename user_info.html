@@ -1,0 +1,38 @@
+<!--<%@ page contentType="text/html;charset=gb2312" %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:useBean id="resultBean" class="mybean.data.User_Info_Bean" scope="request"/>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="webkit.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+</head>
+<body>
+<center>
+<table class="user-table">
+<caption>用户信息</caption>
+<!--<%  String []columnName=resultBean.getColumnName(); 
+  %>-->
+ <tr>
+  <!--<%  for(int i=2;i<columnName.length;i++) {
+  %>    --><th> User Name <!--<%=columnName[i] %>--></th>
+  <!--<%  }
+  %>  --></tr>
+  <!--<%  String [][] record = resultBean.getTableRecord();
+      for(int i=0;i<record.length;i++) {
+  %>    --><tr>
+  <!--<%     for(int j=2;j<record[i].length;j++) {
+  %>        --><td>Record<!--<%= record[i][j] %> --></td>
+  <!--<%     }
+  %>    --></tr>
+  <!--<%  }
+  %>-->
+</table>
+<a href="user_menu_show.html"><i class="ion-close-circled icon-small"></i></a>
+<!--<a href="user_info_change.jsp">ÐÞ¸Ä¸öÈËÐÅÏ¢</a>-->
+<!--<br><a href="user_menu.jsp">·µ»Ø</a>-->
+</center>
+</body>
+</HTML>

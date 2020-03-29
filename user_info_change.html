@@ -1,0 +1,33 @@
+<!--<%@ page contentType="text/html;charset=gb2312" %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:useBean id="resultBean" class="mybean.data.User_Info_Bean" scope="request"/>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+</head>
+<body class="user-info-change">
+
+<FORM action="setUserInfoServlet" Method="post" class="change-info-form">
+<span>修改个人信息</span>
+<ul class="form-sides">
+	<li>
+<Input type=text name="name" placeholder="姓名"><br>
+<Input type=text name="number" class="number" placeholder="学号">
+<Input type=text name="academy" class="academy" placeholder="学院"><br>
+<Input type=text name="major" placeholder="专业"><br>
+<Input type=text name="phone" placeholder="联系电话"><br>
+<Input type=text name="email" placeholder="电子邮箱"><br>
+</li>
+<li>
+<Input type=submit name="confirm" class="confirm" value="确定">
+</li>
+</ul>
+<center><a href="user_menu_show.html"><i class="ion-close-circled icon-small"></i></a></center>
+</form>
+<br><center>无需修改的信息可不填</center>
+</div >
+</body>
+</HTML>

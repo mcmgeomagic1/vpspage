@@ -1,0 +1,63 @@
+<!--<%@ page language="java" contentType="text/html; charset=gb2312" %>-->
+<!DOCTYPE html>
+<html>
+<head>
+<jsp:useBean id="userBean" class="mybean.data.Register_User_Bean" scope="request"/>
+  <title>Sign up in our system</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+</head>
+<!--<body background="image1.JPG" style="background-size:100%">-->
+<body>
+
+<!--<%for(int i=1;i<=3;i++){ %>
+	<br>
+<%} %>
+-->
+<div class="all">
+        <header>
+          <nav>
+                <div class="row">
+                    <img class="logo" src="VPSLogo-white.png" alt="logo">
+                    <ul class="main-nav">
+                        <li><a href="index.html"><i class="ion-arrow-return-left"></i></a></li>
+                   </ul>
+                </div>
+          </nav>
+          <div class="row bellow-the-logo"> 
+
+       <form class="register-form" action="registerUserServlet" name=form method=post>
+        <span>注册账号</span>
+       <ul class="form-sides">
+       <li>
+       <label><i class="ion-android-alert"></i> 帐户信息</label><br>
+       <Input type=text name="logname" class="logname" placeholder="用户"/><br>
+       <Input type=password name="password" class="password" placeholder="用户密码"/>
+       <Input type=password name="again_password" class="password" placeholder="确认密码"/><br>
+       <label><i class="ion-android-person"></i> 用户信息</label><br>
+       <Input type=text name="name" class="name"/ placeholder="姓名"><br>
+       <Input type=text name="number" class="number" placeholder="学号"/>
+       <Input type=text name="academy" class="academy" placeholder="学院"/><br>
+       <Input type=text name="major" class="major" placeholder="专业"/><br>
+       </li>
+       <li>
+       <label><i class="ion-android-call"></i> 联系</label><br>
+       <Input type=text name="phone" class="phone" placeholder="联系电话"/><br>
+       <Input type=text name="email" class="email" placeholder="电子邮箱"/><br>
+       <center>
+       <Input type=submit  name="g" value="提交" class="btn g"/><br>
+       <center><a href="login_user.html"><div class="like-btn">登陆</div></a><br>
+       <jsp:getProperty name="userBean"  property="backNews" /> 
+       <a href="index.html"><i class="ion-close-circled icon-small"></i></a>
+       </center><br>
+       </li>
+       </ul>
+       </form> 
+  </div>
+</header>
+</div>
+</body>
+
+</html>
